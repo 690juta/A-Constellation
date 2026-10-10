@@ -1,0 +1,45 @@
+{
+  "description": "Manual test cases for the A Constellation MVP.",
+  "cases": [
+    {
+      "name": "Valid seed data",
+      "expected": "All six memories load and render."
+    },
+    {
+      "name": "Unknown connection",
+      "expected": "Validation fails with a readable error."
+    },
+    {
+      "name": "Duplicate memory ID",
+      "expected": "Validation fails before rendering."
+    },
+    {
+      "name": "Missing dates",
+      "expected": "Memory card renders a neutral date message; no recent pulse."
+    },
+    {
+      "name": "Known date within last seven calendar days",
+      "expected": "Memory receives a subtle recent pulse."
+    },
+    {
+      "name": "Drag sky",
+      "expected": "Pointer movement translates the map without selecting a star."
+    },
+    {
+      "name": "Select star",
+      "expected": "Memory card opens with title, text, branch, and related memories."
+    },
+    {
+      "name": "Keyboard select",
+      "expected": "Enter and Space open a focused star."
+    },
+    {
+      "name": "Escape",
+      "expected": "Open memory card closes."
+    },
+    {
+      "name": "Reduced motion",
+      "expected": "CSS animations are reduced for users requesting reduced motion."
+    }
+  ]
+}

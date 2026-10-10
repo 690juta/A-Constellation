@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="An atlas of remembered things.">
+  <title>A Constellation — An Atlas of Remembered Things</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/constellation.css">
+  <link rel="stylesheet" href="./css/memory-card.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="A Constellation home">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>A CONSTELLATION</span>
+      </a>
+      <div class="topbar-meta">AN ATLAS OF REMEMBERED THINGS</div>
+      <button id="reset-view" class="quiet-button" type="button" title="Reset sky position">Reset view <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">A PERSONAL MEMORY MAP</p>
+      <h1 id="page-title">Every little thing<br><em>that stays.</em></h1>
+      <p class="intro-copy">A small sky of things remembered. Select a star to unfold the memory it holds.</p>
+    </section>
+
+    <section class="sky-frame" aria-label="Interactive constellation map">
+      <div class="sky-topline"><span id="memory-count">06 remembered things</span><span>DRAG TO EXPLORE</span></div>
+      <div id="sky" class="sky" tabindex="0" role="application" aria-label="Constellation. Use the mouse or touch to explore the stars.">
+        <div class="loading-state" id="loading-state">Gathering the stars…</div>
+        <svg id="star-map" class="star-map" role="img" aria-label="Map of remembered things">
+          <g id="world">
+            <g id="connections"></g>
+            <g id="stars"></g>
+          </g>
+        </svg>
+        <div class="sky-hint" id="sky-hint"><span class="hint-dot"></span> Six small things, a sky just beginning.</div>
+      </div>
+      <div class="sky-footer"><span><i class="legend-star"></i> A remembered thing</span><span><i class="legend-line"></i> A connection</span><span id="recent-legend" class="recent-legend"><i class="legend-pulse"></i> Recently noticed</span></div>
+    </section>
+
+    <section class="below-note">
+      <span class="note-mark" aria-hidden="true">✳</span>
+      <p>The sky is still becoming.<br><span>More stars can find their way here.</span></p>
+    </section>
+
+    <footer class="site-footer"><span>MADE OF SMALL REMEMBERED THINGS</span><span id="footer-status">A living archive · v0.1</span></footer>
+  </main>
+
+  <div class="card-backdrop" id="card-backdrop" hidden></div>
+  <aside class="memory-card" id="memory-card" role="dialog" aria-modal="true" aria-labelledby="card-title" hidden>
+    <div class="card-topline"><span class="card-kicker"><span id="card-branch-dot"></span><span id="card-branch">A MEMORY</span></span><button id="close-card" class="close-button" type="button" aria-label="Close memory">×</button></div>
+    <p class="card-date" id="card-date">A remembered thing</p>
+    <h2 id="card-title"></h2>
+    <p class="card-text" id="card-text"></p>
+    <div class="card-divider"></div>
+    <div class="connected-heading">CONNECTED MEMORIES <span id="connected-count">0</span></div>
+    <div id="connected-list" class="connected-list"></div>
+    <p class="card-footnote" id="card-footnote">Some things stay, even when the moment has passed.</p>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

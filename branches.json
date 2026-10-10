@@ -1,0 +1,19 @@
+{
+  "branches": [
+    {
+      "id": "her-little-world",
+      "name": "Her Little World",
+      "color": "#B6C8E8"
+    },
+    {
+      "id": "her-little-treats",
+      "name": "Her Little Treats",
+      "color": "#D8B99A"
+    },
+    {
+      "id": "her-food-preferences",
+      "name": "Her Food Preferences",
+      "color": "#AFCDBE"
+    }
+  ]
+}

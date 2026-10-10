@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "memories": [
+    {
+      "id": "memory-001",
+      "title": "A little cat-like",
+      "text": "She absolutely loves all animals, especially cats. Maybe that's why her face looks a bit like a cat's—haha.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-little-world",
+      "order": 1
+    },
+    {
+      "id": "memory-002",
+      "title": "Croissants over regular bread",
+      "text": "She likes bread too, but what she likes best are pastries—croissants—because she says regular bread is too dry, haha.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-little-treats",
+      "order": 2
+    },
+    {
+      "id": "memory-003",
+      "title": "Chocolate is the favorite",
+      "text": "The flavor she likes the most is chocolate.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-little-treats",
+      "order": 3
+    },
+    {
+      "id": "memory-004",
+      "title": "A seafood kind of person",
+      "text": "She likes seafood and probably enjoys almost any food—except things like chicken or beef liver and gizzards, eggplant, and beef tendon; basically, anything with a mushy texture.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-food-preferences",
+      "order": 4
+    },
+    {
+      "id": "memory-005",
+      "title": "Her ever-growing drink list",
+      "text": "Some drinks she likes: Kopi Tuku less sugar; Kopi Fore Berry Manuka with more ice; Kopi Kenangan Spanish latte; Point Coffee; Teazzi less sugar with 30% ice; Boost All Berry Bang; Kopi Susu Jago; Kopi Sobat Nako; and iced sweet tea when eating out. She's tried many because she likes exploring flavors.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-little-treats",
+      "order": 5
+    },
+    {
+      "id": "memory-006",
+      "title": "The matcha exception",
+      "text": "She doesn't like matcha. Haha, wimpy.",
+      "dateRemembered": null,
+      "dateNoticed": null,
+      "parentId": null,
+      "connections": [],
+      "branchId": "her-food-preferences",
+      "order": 6
+    }
+  ]
+}
